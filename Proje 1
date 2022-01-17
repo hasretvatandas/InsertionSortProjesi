@@ -1,0 +1,37 @@
+Proje 1
+— [22,27,16,2,18,6] -> Insertion Sort
+
+1. Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+—En küçük sayı bulunur. ->2
+—[22,27,16,2,18,6] -> 2 ile 22 sayıların yeri değişir. -> [2,27,16,22,18,6] 
+—[2,27,16,22,18,6] -> 6 ile 27 sayıların yeri değişir. -> [2,6,16,22,18,27] 
+—[2,6,16,22,18,27] -> 3. Sayı sırası doğrudur. Bir diğerine geçer. -> [2,6,16,22,18,27] 
+—[2,6,16,22,18,27] -> 18 ile 22 sayıları yeri değişir. -> [2,6,16,18,22,27] 
+—[2,6,16,18,22,27] -> 22 ile 27 sayı yerleri doğrudur. 
+— Sıralama tamamlanmıştır. -> [2,6,16,18,22,27] 
+
+
+2. Big-O gösterimini yazınız.  ->Big-O=log^
+
+
+Time Complexity: 
+Average case: Aradığımız sayının ortada olması,
+Worst case: Aradığımız sayının sonda olması, 
+Best case: Aradığımız sayının dizinin en başında olması.
+
+3. Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.  -> Average case kapsamına girer.
+
+
+4.  [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+
+1. Adım: En küçük sayı taraması yapılıp 2 olduğu tespit edilir. 2 ile 7 sayıların yeri değişir. ->[2,3,5,8,7,9,4,15,6]
+
+2. Adım: [2,3,5,8,7,9,4,15,6] -> 2.Sayı, 3’ten küçük sayı olmadığı için aynı kalır. Bir diğerine geçer. 5 ile 4 yer değiştirir. -> [2,3,4,8,7,9,5,15,6]
+
+3. Adım: [2,3,4,8,7,9,5,15,6] -> 8 ile 5 sayıları yer değiştirir. -> [2,3,4,5,7,9,8,15,6]
+
+4. Adım: [2,3,4,5,7,9,8,15,6] -> 7 ile 6 sayıları yer değiştirir. -> [2,3,4,5,6,9,8,15,7]
+
+Kalan Adımlar:
+5. Adım: [2,3,4,5,6,9,8,15,7] -> 9 ile 7 sayıları yer değiştirir. -> [2,3,4,5,6,7,8,15,9]
+6. Adım: [2,3,4,5,6,7,8,15,9] -> 7.sayı 8 den küçük sayı olmadığı için aynı kalır. Bir diğerine geçilir. 15 ile 9 sayıların yeri değişir. -> [2,3,4,5,6,7,8,9,15]
